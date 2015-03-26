@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://learngroup.github.io/accblog
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://blog.jack-wei-sun.org
+title: 孙伟(Jack)的博客
+subtitle: '记时思，习文笔，积跬步，至千里'
+author: 孙伟 Jack
 simple_search: https://www.google.com/search
-description:
+description: 孙伟（Jack）的思绪小站，偶尔停留，望日积月累以足己用。
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -64,14 +64,15 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: jacksunwei
+github_repo_count: 1
+github_show_repo: false
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -99,3 +100,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# oct2
+logo: avatar.png

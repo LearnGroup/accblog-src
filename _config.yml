@@ -97,7 +97,7 @@ disqus_short_name: jack-wei-sun-blog
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-42599276-5
 
 # Facebook Like
 facebook_like: false

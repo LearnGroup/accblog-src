@@ -36,7 +36,7 @@ categories: 随想
 
 传统方法中，我们可以用如下方法，实现一个线程：
 
-{% highlight java %}
+```java
 
 public class ThreadA extends Thread {
     private Data data;
@@ -49,13 +49,11 @@ public class ThreadA extends Thread {
 // usage code
 ThreadA threadA = new ThreadA();
 threadA.start();
-
-{% endhighlight %}
+```
 
 而如果我们使用接口+闭包的话，就可以用下面的方式：
 
-{% highlight java %}
-
+```java
 // usage code
 Data data = new Data();
 Thread threadB = new Thread(new Runnable() {
@@ -65,8 +63,7 @@ Thread threadB = new Thread(new Runnable() {
     }
 });
 threadB.start();
-
-{% endhighlight %}
+```
 
 从上面的例子，我们可以看出，对于Thread这样一个库，它只需要一个实现了Runnalbe接口的类，就可以了，所以我们不再需要专门写一个类，去覆写Thread的run方法。同时，按照传统的做法，我们需要一个专门的类来同时实现Runnable接口，又包含一个`Data`型的对象，来实现业务逻辑。有了闭包之后，我们的编码就变得灵活了许多，我们不在需要把`Data`和`run`方法写在一个类里面，而是可以随这个具体业务的需求，把它们灵活的组合在一起，也就是说它们完全没有关系。
 
